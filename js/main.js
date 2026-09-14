@@ -14,7 +14,7 @@ const searchInput = document.getElementById("searchInput");
 const blockFilter = document.getElementById("blockFilter");
 const statusFilter = document.getElementById("statusFilter");
 const applyBtn = document.getElementById("applyBtn");
-const resetBtn = document.getElementById("resetBtn");
+
 
 function getFilteredStudents() {
   const query = searchInput.value;
@@ -63,7 +63,6 @@ statusFilter.addEventListener("change", () => {
   updateDashboard();
 });
 
-// Initial dashboard state
 displayStudents(students);
 displaySummary(students);
 displayMessage("");
